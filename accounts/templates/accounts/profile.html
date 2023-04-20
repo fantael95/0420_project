@@ -44,5 +44,8 @@
   {% for article in person.like_articles.all %}
     <div>{{ article.title }}</div>
   {% endfor %}
+  <a href="{% url 'articles:index' %}">
+    <button type="submit" class="btn btn-outline-info">메인으로</button>
+  </a>
 </body>
 </html>
